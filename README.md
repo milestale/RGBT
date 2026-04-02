@@ -1,18 +1,18 @@
-# How to use this program
+# How to use this piece of crap
 
 # Template manual
 
 # Config manual
 
 ## Structure of config
-1. Data - your source of colors and etc. Optional in GUI MODE
-2. Targets - your configs for applying theme
-3. Restarts - programms to restart after applying theme. Fully optional
+1. Data - Your source of colors and other shit (GUI MODE avaialble).
+2. Targets - Well, stuff whose colors you want to change.
+3. Restarts - Programs to restart after applying a theme (Optional).
 
-## First you need to set up your config
+## At first, you need to set up your config:
 
 1. Open ~/.config/muscat/config.jsonc
-2. Fill out the config, example:
+2. Enter your settings. For reference:
 
 ```json
 {
@@ -43,12 +43,12 @@
 }
 ```
 
-# GUI MODE
-## You need to run this programm with --gui argument and select your theme
+# How to use GUI MODE
+## To enable the graphical shell, you have to run this programm with --gui argument.
+In GUI mode RGBT looks for themes at ~/.config/muscat/themes
 
 ![screenshot](assets/preview.png)
 
-In GUI MODE programm searches theme in ~/.config/muscat/themes
-
-# CLI MODE
-## "restarts" field is still optional but you need to fill "data" field
+# Notice about CLI MODE
+## In CLI mode, "restarts" field is still optional, but you must fill "data" field.
+### ЛИИИНУУУКС КАКАШКООО, ШИИНДОООУС 10 ЛУУУЧШЕЕЕЕЕЕЕЮФЩВЫТАШГФКИШЩНЫИКГЩРИЫКВ
