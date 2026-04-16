@@ -1,18 +1,35 @@
 # How to use this piece of crap
 
 # Template manual
+## Let's say that you need to configure Waybar. In this case, you need to create the following files in the ~/.config/waybar folder.
+1. style.css - main style file
+2. style-temp.css - your template file
 
-# Config manual
+## Example:
+```css
+* {
+    font-family: "JetBrains Mono";
+    font-weight: bold;
+    font-size: 14px;
+    color: #{{base05}};
+}
+```
 
-## Structure of config
-1. Data - Your source of colors and other shit (GUI MODE avaialble).
-2. Targets - Well, stuff whose colors you want to change.
-3. Restarts - Programs to restart after applying a theme (Optional).
+# How theme files are encoded
+## Every theme file is encoded in all your "base16" are belong to us.
 
-## At first, you need to set up your config:
+# How to make a config
 
-1. Open ~/.config/muscat/config.jsonc
-2. Enter your settings. For reference:
+## Structure of configuration file:
+1. data - Your source of colors and shit (Which is optional if used in graphical shell mode)
+2. data_dir - The directory where all of your themes are stored. Default: ~/.config/muscat/themes.
+3. targets - Software, whose color pallete you want to change.
+4. restarts - Programs that will be restarted after applying themes (Optional).
+
+## How to edit configuration file:
+
+1. Open ~/.config/muscat/config.jsonc in your preffered text editor.
+2. Input the arguments accordingly. For reference:
 
 ```json
 {
@@ -43,12 +60,13 @@
 }
 ```
 
-# How to use GUI MODE
-## To enable the graphical shell, you have to run this programm with --gui argument.
-In GUI mode RGBT looks for themes at ~/.config/muscat/themes
+# How to use in GUI MODE
+## To enable graphical shell, you need to run this program with "--gui" argument.
 
+This is how it looks like:
 ![screenshot](assets/preview.png)
 
 # Notice about CLI MODE
-## In CLI mode, "restarts" field is still optional, but you must fill "data" field.
-### ЛИИИНУУУКС КАКАШКООО, ШИИНДОООУС 10 ЛУУУЧШЕЕЕЕЕЕЕЮФЩВЫТАШГФКИШЩНЫИКГЩРИЫКВ
+## If used in terminal, "restarts" field is optional, but data field is a must.
+
+# ЛИИИНУУУКС КАКАШКООО, ШИИНДОООУС 10 ЛУУУЧШЕЕЕЕЕЕЕЮФЩВЫТАШГФКИШЩНЫИКГЩРИЫКВ
